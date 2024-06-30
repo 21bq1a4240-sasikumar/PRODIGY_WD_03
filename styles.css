@@ -1,0 +1,94 @@
+/* styles.css */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #4caf50;
+    margin-bottom: 20px;
+}
+
+.game-mode {
+    margin-bottom: 20px;
+}
+
+.mode-btn {
+    background: #ff5722;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.mode-btn:hover {
+    background: #e64a19;
+    transform: scale(1.05);
+}
+
+.player-info {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #4caf50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #e0f7fa;
+}
+
+.game-status {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #f44336;
+}
+
+.reset-btn {
+    background: #ff5722;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.reset-btn:hover {
+    background: #e64a19;
+    transform: scale(1.05);
+}
